@@ -21,8 +21,123 @@
 
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="PhantomRAM.xise"/>
 
-  <files xmlns="http://www.xilinx.com/XMLSchema"/>
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="PhantomRAM.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="PhantomRAM.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="PhantomRAM.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="PhantomRAM.jed"/>
+    <file xil_pn:fileType="FILE_LFP" xil_pn:name="PhantomRAM.lfp"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="PhantomRAM.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="PhantomRAM.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="PhantomRAM.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="PhantomRAM.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="PhantomRAM.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="PhantomRAM.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="PhantomRAM.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="PhantomRAM.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PhantomRAM.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="PhantomRAM.rpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="PhantomRAM.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="PhantomRAM.syr"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="PhantomRAM.tim"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="PhantomRAM.tspec"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="PhantomRAM.vm6"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="PhantomRAM.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="PhantomRAM.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="PhantomRAM_build.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="PhantomRAM_html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="PhantomRAM_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="PhantomRAM_pad.csv"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="PhantomRAM_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1583890124" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1583890124">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1583890124" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="2290783685216700862" xil_pn:start_ts="1583890124">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1583893982" xil_pn:in_ck="4207314445958398651" xil_pn:name="TRANEXT_xstsynthesize_xc9500xl" xil_pn:prop_ck="1054781143751936024" xil_pn:start_ts="1583893976">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="PhantomRAM.lso"/>
+      <outfile xil_pn:name="PhantomRAM.ngc"/>
+      <outfile xil_pn:name="PhantomRAM.ngr"/>
+      <outfile xil_pn:name="PhantomRAM.prj"/>
+      <outfile xil_pn:name="PhantomRAM.stx"/>
+      <outfile xil_pn:name="PhantomRAM.syr"/>
+      <outfile xil_pn:name="PhantomRAM.xst"/>
+      <outfile xil_pn:name="PhantomRAM_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1583891006" xil_pn:in_ck="6972901368727332451" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="8766308978735479961" xil_pn:start_ts="1583891005">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1583893986" xil_pn:in_ck="7508117175793278528" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="-4251716299155370538" xil_pn:start_ts="1583893982">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="PhantomRAM.bld"/>
+      <outfile xil_pn:name="PhantomRAM.ngd"/>
+      <outfile xil_pn:name="PhantomRAM_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1583894010" xil_pn:in_ck="6972901368727324958" xil_pn:name="TRANEXT_vm6File_xc9500xl" xil_pn:prop_ck="8331471875390271902" xil_pn:start_ts="1583893986">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="PhantomRAM.gyd"/>
+      <outfile xil_pn:name="PhantomRAM.mfd"/>
+      <outfile xil_pn:name="PhantomRAM.nga"/>
+      <outfile xil_pn:name="PhantomRAM.pad"/>
+      <outfile xil_pn:name="PhantomRAM.pnx"/>
+      <outfile xil_pn:name="PhantomRAM.rpt"/>
+      <outfile xil_pn:name="PhantomRAM.tim"/>
+      <outfile xil_pn:name="PhantomRAM.tspec"/>
+      <outfile xil_pn:name="PhantomRAM.vm6"/>
+      <outfile xil_pn:name="PhantomRAM.xml"/>
+      <outfile xil_pn:name="PhantomRAM_build.xml"/>
+      <outfile xil_pn:name="PhantomRAM_html"/>
+      <outfile xil_pn:name="PhantomRAM_pad.csv"/>
+    </transform>
+    <transform xil_pn:end_ts="1583894012" xil_pn:in_ck="6972901368727333822" xil_pn:name="TRANEXT_crtProg_xc9500" xil_pn:prop_ck="-6294026017969277533" xil_pn:start_ts="1583894010">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="PhantomRAM.jed"/>
+    </transform>
+    <transform xil_pn:end_ts="1583890405" xil_pn:in_ck="6972901368727320536" xil_pn:name="TRAN_impactProgrammingTool_CPLD" xil_pn:prop_ck="-6423603447897672664" xil_pn:start_ts="1583890405">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+    <transform xil_pn:end_ts="1583890385" xil_pn:in_ck="6972901368727320536" xil_pn:name="TRAN_configureTargetDevice_CPLD" xil_pn:prop_ck="-950559214863119156" xil_pn:start_ts="1583890385">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+    <transform xil_pn:end_ts="1583890166" xil_pn:in_ck="6972901368727333822" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1583890164">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+  </transforms>
 
 </generated_project>

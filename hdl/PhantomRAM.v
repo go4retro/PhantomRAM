@@ -32,8 +32,7 @@ module PhantomRAM(
                 inout [15:0]address_cpu, 
                 inout [7:0]data_cpu,
                 output _enbus,
-                inout [12:0]address_mem,
-                output [18:13]bank_mem,
+                output [18:0]address_mem,
                 inout [7:0]data_mem,
                 output _we_mem,
                 output _ce_flash,
@@ -69,8 +68,10 @@ assign _ce_flash =                     1;
 assign _enbus =                        1;
 
 assign _halt =                         (flag_active & flag_halt ? 0 : 'bz);
-assign _ce_ram =                       !flag_dma; //!(ce_test | flag_dma);
-assign _we_mem =                       !(flag_dma & !flag_write); //!((ce_test & !r_w_cpu) | (flag_dma & !flag_write));
+assign _ce_ram =                     !flag_dma;
+//assign _ce_ram =                       !(ce_test | flag_dma);
+assign _we_mem =                       !(flag_dma & !flag_write); 
+//assign _we_mem =                       !((ce_test & !r_w_cpu) | (flag_dma & !flag_write));
 assign led =                           flag_dma;
 
 assign ce_reg =                        (address_cpu[15:4] == 12'hff6);
@@ -85,15 +86,14 @@ assign ce_lenh =                       ce_reg & (address_cpu[3:0] == 7);
 assign ce_lenl =                       ce_reg & (address_cpu[3:0] == 8);
 assign ce_ctrl =                       ce_reg & (address_cpu[3:0] == 9);
 //assign ce_test =                       ce_reg & (address_cpu[3:0] == 10);
-assign ce_knock =                      ce_lenh; //ce_reg & (address_cpu[3:0] == 14);
-assign ce_knock2 =                     ce_lenl; //ce_reg & (address_cpu[3:0] == 15);
+assign ce_knock =                      ce_lenh;
+assign ce_knock2 =                     ce_lenl;
 
 assign data_cpu =                      data_cpu_out;
 assign r_w_cpu =                       r_w_cpu_out;
 assign address_cpu =                   address_cpu_out;
 assign data_mem =                      data_mem_out;
-assign address_mem =                   address_mem_out[12:0];
-assign bank_mem =                      address_mem_out[18:13];
+assign address_mem =                   address_mem_out;
 
 /* 
  * Address is valid at start of Q, and start of E is 250nS before fall of Q,
